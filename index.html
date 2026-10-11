@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mi app Python</title>
+    <script src="https://cdn.jsdelivr.net/gh/brython-dev/brython@master/www/brython.min.js"></script>
+</head>
+<body onload="brython()">
+    <h1>Python en el navegador</h1>
+    <p id="salida"></p>
+
+    <script type="text/python" src="iloove.py"></script>   
+        from browser import document
+        document["salida"].text = "¡Hola desde Python!"
+    </script>
+</body>
+</html>   
