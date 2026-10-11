@@ -1,16 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Mi app Python</title>
+    <title>Love Heart</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/brython/3.14.3/brython.min.js"></script>
+    <style>
+        body { margin: 0; background: #060208; display: flex; justify-content: center; align-items: center; height: 100vh; }
+        canvas { display: block; }
+    </style>
 </head>
 <body onload="brython()">
-    <h1>Python en el navegador</h1>
-    <p id="salida">Cargando...</p>
-
-    <script type="text/python">
-        from browser import document
-        document["salida"].text = "¡Hola desde Python!"
-    </script>
+    <canvas id="cv" width="800" height="650"></canvas>
+    <script type="text/python" src="app.py"></script>
 </body>
 </html>   
